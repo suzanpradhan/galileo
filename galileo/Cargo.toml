@@ -118,7 +118,7 @@ web-sys = { workspace = true, features = [
 ] }
 
 [target.'cfg(target_os = "android")'.dependencies]
-reqwest = { workspace = true, features = ["native-tls-vendored"] }
+reqwest = { workspace = true, features = ["rustls-tls"] }
 winit = { workspace = true, features = ["android-native-activity"], optional = true }
 
 [[example]]
